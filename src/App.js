@@ -12,7 +12,7 @@ const App = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(() => {
-    axios.get("https://backend-8wdo.onrender.com/")
+    axios.get("https://backend-8wdo.onrender.com")
       .then((e) => {
         setTodos(e.data);
       }).catch(err => console.log(err))
@@ -23,7 +23,7 @@ const App = () => {
       alert('Please enter data.');
       return;
     }
-    axios.post("https://backend-8wdo.onrender.com//post", { name: input })
+    axios.post("https://backend-8wdo.onrender.com/post", { name: input })
       .then((res) => {
         console.log(res.data);
         setRefresh((prevState) => !prevState);
@@ -34,7 +34,7 @@ const App = () => {
 
 
   const deleteItem = (id) => {
-    axios.delete(`https://backend-8wdo.onrender.com/${id}`)
+    axios.delete(`https://backend-8wdo.onrender.com/delete/${id}`)
       .then(() => {
         console.log("Deleted Successfully");
         setTodos((prevTodos) => prevTodos.filter((item) => item._id !== id));

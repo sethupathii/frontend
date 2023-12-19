@@ -7,7 +7,7 @@ const Update = ({ setShowDropdown, updateContent, setRefresh }) => {
     const [input, setInput] = useState(updateContent.name);
 
     const updatedValue = () => {
-        axios.put(`https://backend-8wdo.onrender.com/${updateContent.id}`, { name: input })
+        axios.put(`https://backend-8wdo.onrender.com/update/${updateContent.id}`, { name: input })
             .then(() => {
                 console.log("Updated Sucessfully");
                 setRefresh((prevState) => !prevState);
