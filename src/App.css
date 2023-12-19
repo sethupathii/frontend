@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.img{
+  background-image: 'E:\Avanexa Tech\Todo Task\frontend_todo\public\Assets\background_img.jpg';
+}
+
+body {
+  /* background-color: #252525; */
+  background-image:url('../public/Assets/background_img.jpg');
+  /* background-image:url('../public/Assets/yyl.png'); */
+  background-position: fixed;
+  color: white;
+  background-repeat: no-repeat;
+}
+
+.mainDiv {
+  margin: 0 auto;
+  max-width: fit-content;
+  background-color: rgb(236, 236, 243);
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(13, 7, 7);
+}
+
+.input_holder {
+  display: flex;
+  gap: 10px;
+ 
+}
+
+input,
+button {
+  padding: 10px 20px;
+  background-color: #696969;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+input {
+  width: 300px;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.dataTo {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.lists {
+  margin-top: 20px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.Dropdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000006c;
+  display: grid;
+  place-items: center;
+}
+
+.popup {
+  position: relative;
+  background-color: #696969;
+  width: 400px;
+  padding: 10px;
+}
+
+.CloseIcon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.popup h1{
+  text-align: center;
+  font-size: 30px;
+}
+
+.popup__input_holder{
+  margin-top: 30px;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.popup__input_holder input,
+.popup__input_holder button{
+  background-color: #fff;
+  color: #000;
+}
+
+.popup__input_holder input::placeholder{
+  color: #383838;
+}
+
+.popup__input_holder button{
+  background-color:black;
+  color: #fff;
+}

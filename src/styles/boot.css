@@ -1,0 +1,36 @@
+body {
+    box-sizing: border-box;
+}
+
+.input {
+    width: 600px;
+}
+
+.App {
+    background-color: rgb(97, 35, 197);
+    position: sticky;
+    top: 0;
+}
+
+.but{
+    cursor: pointer;
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+/* <div className="card mt-5">
+                <div className="card-body">
+                    <div className="form-group row">
+                        <div className="col-xs-2 d-flex justify-content-between">
+                            <input type="text" placeholder="Enter Name" className="form-control input" />
+                            <button className="btn btn-outline-danger">Add Data</button>
+                        </div>
+                    </div>
+                    <div className="bg-primary mt-3 d-flex justify-content-between">
+                        <h1></h1>
+                        <h1></h1>
+                        <h1></h1>
+                    </div>
+                </div>
+            </div>  */

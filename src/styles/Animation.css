@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #252525;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .mainDiv {
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input_holder {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  input[type='text'] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #696969;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .lists {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+  }
+  
+  .dataTo {
+    background-color: #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon {
+    cursor: pointer;
+  }
+  
+  /* Dropdown Styles */
+  .Dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000006c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup {
+    background-color: #696969;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .CloseIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .popup h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .popup__input_holder {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .popup__input_holder input,
+  .popup__input_holder button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .popup__input_holder button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup__input_holder button:hover {
+    background-color: #222;
+  }
+  
+  /* Responsive design using media queries */
+  @media screen and (max-width: 768px) {
+    .mainDiv {
+      max-width: 90%;
+      padding: 10px;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+  
